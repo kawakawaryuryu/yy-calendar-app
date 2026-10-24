@@ -1,0 +1,31 @@
+{
+  "name": "yy-calendar-pwa-mock",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": { "node": ">=22.18.0" },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build && node scripts/build-sw.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "test:native-web": "node tests/native-web.mjs",
+    "native": "pnpm --dir native start",
+    "native:qr": "pnpm --dir native qr",
+    "native:typecheck": "pnpm --dir native typecheck",
+    "native:export": "pnpm --dir native export"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "playwright": "1.62.1",
+    "typescript": "^5.9.0",
+    "vite": "^8.0.0"
+  }
+}

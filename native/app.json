@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "日々 Native",
+    "slug": "yy-calendar-native-mock",
+    "version": "0.1.0",
+    "scheme": "hibi-native",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#f8f7f4",
+    "experiments": {
+      "tsconfigPaths": false
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "dev.yycalendar.mock"
+    },
+    "android": {
+      "package": "dev.yycalendar.mock",
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#d77c52"
+      }
+    },
+    "web": {
+      "name": "日々 Native — UI確認用",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker",
+      "expo-status-bar"
+    ]
+  }
+}
